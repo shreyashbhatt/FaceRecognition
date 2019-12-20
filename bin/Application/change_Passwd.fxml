@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="password_Pane" prefHeight="550.0" prefWidth="650.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Application.change_Passwd">
+  <!-- TODO Add Nodes -->
+  <children>
+    <SplitPane dividerPositions="0.08941605839416059" focusTraversable="true" layoutX="0.0" layoutY="0.0" orientation="VERTICAL" prefHeight="550.0" prefWidth="650.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <Button fx:id="back" layoutX="7.0" layoutY="6.0" mnemonicParsing="false" onAction="#back_BtnClicked" prefHeight="35.0" prefWidth="81.0" text="Back" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <Label layoutX="143.0" layoutY="212.0" prefHeight="35.0" prefWidth="104.0" text="New Password" />
+            <Button fx:id="submit" disable="true" layoutX="286.0" layoutY="288.0" mnemonicParsing="false" onAction="#submit_Clicked" prefHeight="35.0" prefWidth="104.0" text="Submit" />
+            <Label layoutX="143.0" layoutY="152.0" prefHeight="36.0" prefWidth="104.0" text="New Password" />
+            <Text layoutX="335.0" layoutY="89.0" scaleX="13.693841538733016" scaleY="5.413215859030838" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Password" underline="true">
+              <font>
+                <Font name="Agency FB Bold" size="5.0" />
+              </font>
+            </Text>
+            <Label fx:id="warning" layoutX="143.0" layoutY="385.0" prefHeight="22.0" prefWidth="410.0" text="" />
+            <PasswordField fx:id="text1" layoutX="286.0" layoutY="154.0" onKeyReleased="#passwd_validate" prefHeight="32.0" prefWidth="267.0">
+              <tooltip>
+                <Tooltip text="*Password length should be at least 8 characters containing at least 1symbol,1 upper case letter,one lower case letter and  1 number." fx:id="text_passwd" />
+              </tooltip>
+            </PasswordField>
+            <PasswordField fx:id="text2" layoutX="286.0" layoutY="214.0" onKeyReleased="#passwd_validate" prefHeight="32.0" prefWidth="267.0" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>

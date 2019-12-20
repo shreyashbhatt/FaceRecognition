@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="db_creationPane" prefHeight="550.0" prefWidth="650.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="db_creationController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="543.0" prefWidth="650.0">
+      <bottom>
+        <Button fx:id="start_Btn" defaultButton="true" mnemonicParsing="false" prefHeight="44.0" prefWidth="130.0" text="Button" BorderPane.alignment="CENTER" />
+      </bottom>
+      <center>
+        <ImageView fitHeight="445.0" fitWidth="593.3333333333333" pickOnBounds="true" preserveRatio="true" />
+      </center>
+    </BorderPane>
+  </children>
+</AnchorPane>

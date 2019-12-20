@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="login_register_Scene" prefHeight="550.0" prefWidth="650.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Application.Login_registerController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <SplitPane dividerPositions="0.08029197080291971" focusTraversable="true" layoutX="0.0" layoutY="0.0" orientation="VERTICAL" prefHeight="550.0" prefWidth="650.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="41.0" prefWidth="648.0">
+          <children>
+            <Button id="login_backBtn" layoutX="7.0" layoutY="3.0" mnemonicParsing="false" onAction="#back_BtnClicked" prefHeight="34.000099999997474" prefWidth="77.00009999999747" text="Back" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="650.0">
+          <children>
+            <Text layoutX="373.0" layoutY="117.0" scaleX="5.8119503139666255" scaleY="4.6338718521830335" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+              <font>
+                <Font size="11.0" />
+              </font>
+            </Text>
+            <Label layoutX="154.0" layoutY="172.0" prefHeight="34.0" prefWidth="88.0" text="E-mail ID">
+              <labelFor>
+                <TextField id="user_NameTextField" fx:id="email" layoutX="264.0" layoutY="172.0" onKeyReleased="#email_Validate" prefHeight="34.0" prefWidth="300.0" />
+              </labelFor>
+            </Label>
+            <fx:reference source="email" />
+            <Label layoutX="154.0" layoutY="244.0" prefHeight="35.0" prefWidth="88.0" text="Password" />
+            <PasswordField fx:id="passwd" layoutX="264.0" layoutY="244.0" onKeyReleased="#check_EmptyPasswd" prefHeight="34.0" prefWidth="300.0" />
+            <Button fx:id="login_Btn" defaultButton="true" disable="true" layoutX="264.0" layoutY="318.0" mnemonicParsing="false" onAction="#login_BtnClicked" prefHeight="34.0" prefWidth="88.0" text="Login" />
+            <Label id="status" fx:id="passwd_status" layoutX="35.0" layoutY="432.0" prefHeight="27.0" prefWidth="549.0" text="" textFill="RED" />
+            <Label id="emaillabel" fx:id="email_status" layoutX="35.0" layoutY="386.0" prefHeight="27.0" prefWidth="549.0" text="" textFill="RED" />
+            <Label fx:id="warning" layoutX="154.0" layoutY="405.0" prefWidth="410.0" text="" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>

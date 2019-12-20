@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="face_RecogScenePane" fx:id="face_RecogScenePane" prefHeight="550.0" prefWidth="650.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Application.Face_RecogSceneController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <SplitPane dividerPositions="0.08211678832116788" focusTraversable="true" layoutX="0.0" layoutY="0.0" orientation="VERTICAL" prefHeight="550.0" prefWidth="650.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <HBox layoutX="0.0" layoutY="0.0" prefHeight="42.0" prefWidth="648.0">
+              <children>
+                <Button fx:id="back_Btn" cancelButton="true" mnemonicParsing="false" onAction="#back_BtnClicked" prefHeight="35.0" prefWidth="75.0" text="Back">
+                  <HBox.margin>
+                    <Insets right="80.0" top="4.0" />
+                  </HBox.margin>
+                </Button>
+                <Label fx:id="person_Name" contentDisplay="CENTER" prefHeight="35.0" prefWidth="313.0" text="PERSON NAME" textAlignment="JUSTIFY">
+                  <HBox.margin>
+                    <Insets right="50.0" top="4.0" />
+                  </HBox.margin>
+                </Label>
+                <Button fx:id="start_Btn" mnemonicParsing="false" onAction="#start_BtnClicked" prefHeight="35.0" prefWidth="125.33331298828125" text="Start Camera">
+                  <HBox.margin>
+                    <Insets top="4.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <ImageView id="original" fx:id="img_View" fitHeight="479.5" fitWidth="639.3332919528351" layoutX="4.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>

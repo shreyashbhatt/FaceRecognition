@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="first_ScenePane" prefHeight="550.0" prefWidth="650.0" style="-fx-background-color: blue;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Application.Main">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button fx:id="root" layoutX="505.0" layoutY="7.0" mnemonicParsing="false" onAction="#root_Clicked" prefHeight="36.0" prefWidth="131.0" text="Root" />
+    <Button fx:id="user_Btn" defaultButton="true" layoutX="247.0" layoutY="454.0" mnemonicParsing="false" onAction="#user_BtnClicked" prefHeight="49.0" prefWidth="160.0" text="USER" />
+    <Button fx:id="admin_Btn" contentDisplay="CENTER" layoutX="245.0" layoutY="363.0" mnemonicParsing="false" onAction="#admin_BtnClicked" prefHeight="49.0" prefWidth="161.00006103515625" text="ADMIN" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="admin_Pane" prefHeight="550.0" prefWidth="650.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Application.Admin_SceneController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button id="add_User" fx:id="add_UserBtn" layoutX="238.0" layoutY="104.0" mnemonicParsing="false" onAction="#add_UserBtnClicked" prefHeight="53.0" prefWidth="174.0" text="Add User" />
+    <Button fx:id="profile" layoutX="238.0" mnemonicParsing="false" onAction="#profile_BtnClicked" prefHeight="46.0" prefWidth="174.0" text="Profile" AnchorPane.topAnchor="304.0" />
+    <Button blendMode="EXCLUSION" cancelButton="true" layoutX="238.0" mnemonicParsing="false" onAction="#logout" prefHeight="46.0" prefWidth="174.0" text="Logout" AnchorPane.topAnchor="404.0" />
+    <Button id="Change_passwd" fx:id="change_Passwd" layoutX="238.0" layoutY="203.0" mnemonicParsing="false" onAction="#change_Password" prefHeight="53.0" prefWidth="174.0" text="Change Password" />
+  </children>
+</AnchorPane>
